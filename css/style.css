@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*************** GENERAL RULES  ***************/
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+/**************** MAIN RULES  *******************/
+
+main {
+  overflow-y: scroll;
+  display: flex;
+  border: 1px solid white;
+  flex-grow: 1;
+}
+header {
+  border: 1px solid white;
+  flex-basis: 100px;
+}
+
+
+/**************** SIDEBAR RULES  ******************/
+
+.sidebar {
+  width: 80px;
+  border: 1px solid white;
+}
+.selection-player {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border: 1px solid white;
+}
+
+
+/**************** FOOTER RULES  ******************/
+
+footer {
+  border: 1px solid white;
+  flex-basis: 150px;
+}
