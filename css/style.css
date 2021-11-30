@@ -28,7 +28,7 @@ main {
 
 /* Header rules  */
 
-.selection-player {
+.wrapper {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,6 @@ main {
   border: 1px solid white;
 }
 .header {
-  border: 1px solid white;
   flex-basis: 80px;
   display: flex;
   flex-direction: column;
@@ -54,7 +53,7 @@ main {
 /* Principal Main  */
 
 .player {
-  background-color: rgb(40, 43, 53);
+  background-color: black;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -79,13 +78,18 @@ main {
   text-decoration: none;
   color: grey;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 .title {
   height: 50px;
+  padding: 0 10px;
+  font-weight: 400;
+  line-height: 50px;
 }
 
 .card {
+  padding: 0 10px;
   flex-grow: 1;
   border: 1px solid white;
 }
@@ -93,7 +97,6 @@ main {
 
 .sidebar {
   width: 60px;
-  border: 1px solid white;
   display: flex;
   justify-content: center;
 }
