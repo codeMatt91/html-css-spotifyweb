@@ -35,7 +35,7 @@ main {
   flex-grow: 1;
   border: 1px solid white;
 }
-header {
+.header {
   border: 1px solid white;
   flex-basis: 100px;
   display: flex;
@@ -43,7 +43,7 @@ header {
   align-items: flex-end;
   justify-content: center;
 }
-header .button {
+.header .button {
   font-size: 18px;
   border: 1px solid white;
   border-radius: 20px;
@@ -52,6 +52,7 @@ header .button {
 }
 
 .player {
+   background-color: rgb(40,43,53);
   flex-grow: 1;
 }
 /**************** SIDEBAR RULES  ******************/
@@ -64,11 +65,13 @@ header .button {
 }
 .position-items {
   font-size: 35px;
-  border: 1px solid white;
   height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.navigation {
+   padding-top: 10px;
 }
 .user img,
 .navigation img {
@@ -80,6 +83,7 @@ header .button {
 }
 .user {
   justify-content: flex-end;
+  padding-bottom: 10px;
 }
 .user img:first-child {
    width: 20px;
@@ -94,4 +98,5 @@ header .button {
 footer {
   border: 1px solid white;
   flex-basis: 150px;
+  background-color: rgb(56,56,56);
 }
