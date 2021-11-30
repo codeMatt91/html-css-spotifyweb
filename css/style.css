@@ -7,6 +7,7 @@
 
 body {
    color: white;
+   font-family: sans-serif;
 }
 
 /*************** GENERAL RULES  ***************/
@@ -18,17 +19,33 @@ body {
   background-color: black;
 }
 
+
 /**************** MAIN RULES  *******************/
 
 main {
-  overflow-y: scroll;
+  overflow-y: auto;
   display: flex;
   border: 1px solid white;
   flex-grow: 1;
 }
+
+/* Header rules  */
+
 header {
   border: 1px solid white;
   flex-basis: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  
+}
+header .button{
+   font-size: 18px;
+   border: 1px solid white;
+   border-radius: 20px;
+   display: inline-block;
+   padding: 10px 30px;
 }
 
 
