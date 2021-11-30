@@ -21,7 +21,6 @@ body {
 /**************** MAIN RULES  *******************/
 
 main {
-  overflow-y: auto;
   display: flex;
   border: 1px solid white;
   flex-grow: 1;
@@ -29,6 +28,13 @@ main {
 
 /* Header rules  */
 
+.selection-player {
+   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border: 1px solid white;
+}
 header {
   border: 1px solid white;
   flex-basis: 100px;
@@ -45,35 +51,30 @@ header .button {
   padding: 10px 30px;
 }
 
-.selection-player {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  border: 1px solid white;
+.player {
+   flex-grow: 1;
 }
-
 /**************** SIDEBAR RULES  ******************/
 
 .sidebar {
-  width: 80px;
+  width: 60px;
   border: 1px solid white;
   display: flex;
   justify-content: center;
 }
 .position-items {
-   font-size: 30px;
+  font-size: 35px;
   border: 1px solid white;
   height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.navigation {
-  padding-top: 5px;
+.user i,
+.navigation i {
+  margin: 5px 0;
 }
-
 .user {
-  padding-bottom: 5px;
   justify-content: flex-end;
 }
 
