@@ -54,35 +54,40 @@ main {
 /* Principal Main  */
 
 .player {
-   background-color: rgb(40,43,53);
+  background-color: rgb(40, 43, 53);
   flex-grow: 1;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 #category {
-   height: 120px;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
 }
 
-#category ul{
-   padding: 5px 10px;
-   list-style-type: none;
-   font-size: 20px;
-   display: flex;
+#category ul {
+  padding: 10px 10px;
+  list-style-type: none;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
+
 #category ul a {
-   text-decoration: none;
-   color: grey;
-   margin: 10px 20px;
+  text-decoration: none;
+  color: grey;
+  padding: 10px 20px;
 }
 
 .title {
-   height: 50px;
-   border: 1px solid white;
+  height: 50px;
 }
 
 .card {
-   flex-grow: 1;
-   border: 1px solid white;
+  flex-grow: 1;
+  border: 1px solid white;
 }
 /**************** SIDEBAR RULES  ******************/
 
@@ -100,7 +105,7 @@ main {
   align-items: center;
 }
 .navigation {
-   padding-top: 10px;
+  padding-top: 10px;
 }
 .user img,
 .navigation img {
@@ -115,11 +120,11 @@ main {
   padding-bottom: 10px;
 }
 .user img:first-child {
-   width: 20px;
+  width: 20px;
 }
 #profile {
-   background-color: rgb(149,150,150);
-   border-radius: 50%;
+  background-color: rgb(149, 150, 150);
+  border-radius: 50%;
 }
 
 /**************** FOOTER RULES  ******************/
@@ -127,5 +132,5 @@ main {
 footer {
   border: 1px solid white;
   flex-basis: 100px;
-  background-color: rgb(56,56,56);
+  background-color: rgb(56, 56, 56);
 }
