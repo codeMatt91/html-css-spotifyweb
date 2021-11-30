@@ -18,11 +18,11 @@ body {
   background-color: black;
 }
 
+
 /**************** MAIN RULES  *******************/
 
 main {
   display: flex;
-  border: 1px solid white;
   flex-grow: 1;
 }
 
@@ -33,7 +33,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  border: 1px solid white;
+  
 }
 .header {
   flex-basis: 80px;
@@ -79,7 +79,10 @@ main {
   color: grey;
   padding: 10px 20px;
   cursor: pointer;
+  font-weight: 900;
 }
+
+/* Title  */
 
 .title {
   height: 50px;
@@ -88,11 +91,36 @@ main {
   line-height: 50px;
 }
 
+/* Card  */
+
 .card {
-  padding: 0 10px;
+  padding: 10px 0;
   flex-grow: 1;
-  border: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.card-album {
+   text-align: center;
+   width: 250px;
+   height: 350px;
+   margin: 5px;
+}
+.card-album img {
+   margin-bottom: 10px;
+   width: 250px;
+}
+.card-album span {
+   display: inline-block;
+   color: grey;
+   font-weight: bold;
+   margin-top: 8px;
+}
+
+
+
+
+
 /**************** SIDEBAR RULES  ******************/
 
 .sidebar {
@@ -129,6 +157,12 @@ main {
   background-color: rgb(149, 150, 150);
   border-radius: 50%;
 }
+
+
+
+
+
+
 
 /**************** FOOTER RULES  ******************/
 
