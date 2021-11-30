@@ -4,10 +4,9 @@
   box-sizing: border-box;
 }
 
-
 body {
-   color: white;
-   font-family: sans-serif;
+  color: white;
+  font-family: sans-serif;
 }
 
 /*************** GENERAL RULES  ***************/
@@ -18,7 +17,6 @@ body {
   flex-direction: column;
   background-color: black;
 }
-
 
 /**************** MAIN RULES  *******************/
 
@@ -38,14 +36,13 @@ header {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  
 }
-header .button{
-   font-size: 18px;
-   border: 1px solid white;
-   border-radius: 20px;
-   display: inline-block;
-   padding: 10px 30px;
+header .button {
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 10px 30px;
 }
 
 .selection-player {
@@ -61,8 +58,24 @@ header .button{
   width: 80px;
   border: 1px solid white;
   display: flex;
+  justify-content: center;
+}
+.position-items {
+   font-size: 30px;
+  border: 1px solid white;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation {
+  padding-top: 5px;
 }
 
+.user {
+  padding-bottom: 5px;
+  justify-content: flex-end;
+}
 
 /**************** FOOTER RULES  ******************/
 
