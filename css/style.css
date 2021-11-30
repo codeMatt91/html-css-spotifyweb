@@ -48,18 +48,19 @@ header .button{
    padding: 10px 30px;
 }
 
+.selection-player {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border: 1px solid white;
+}
 
 /**************** SIDEBAR RULES  ******************/
 
 .sidebar {
   width: 80px;
   border: 1px solid white;
-}
-.selection-player {
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  border: 1px solid white;
 }
 
 
