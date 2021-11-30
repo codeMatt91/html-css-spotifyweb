@@ -9,6 +9,12 @@ body {
   font-family: sans-serif;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*************** GENERAL RULES  ***************/
 
 .content {
@@ -21,6 +27,7 @@ body {
 /**************** MAIN RULES  *******************/
 
 main {
+  overflow: auto;
   display: flex;
   flex-grow: 1;
 }
@@ -28,7 +35,6 @@ main {
 /* Header rules  */
 
 .wrapper {
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -96,6 +102,7 @@ main {
   flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .card-album {
@@ -118,9 +125,12 @@ main {
 /**************** SIDEBAR RULES  ******************/
 
 .sidebar {
-  width: 85px;
+  width: 35px;
   display: flex;
   justify-content: center;
+}
+nav {
+  width: 35px;
 }
 .position-items {
   height: 50%;
@@ -156,7 +166,6 @@ main {
 /**************** FOOTER RULES  ******************/
 
 footer {
-  border: 1px solid white;
-  flex-basis: 80px;
+  height: 80px;
   background-color: rgb(56, 56, 56);
 }
