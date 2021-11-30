@@ -18,7 +18,6 @@ body {
   background-color: black;
 }
 
-
 /**************** MAIN RULES  *******************/
 
 main {
@@ -33,7 +32,6 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  
 }
 .header {
   flex-basis: 80px;
@@ -59,7 +57,7 @@ main {
   flex-direction: column;
 }
 #category {
-  height: 90px;
+  height: 120px;
   display: flex;
   justify-content: space-around;
 }
@@ -101,35 +99,30 @@ main {
 }
 
 .card-album {
-   text-align: center;
-   width: 250px;
-   height: 350px;
-   margin: 5px;
+  text-align: center;
+  width: 250px;
+  height: 350px;
+  margin: 5px;
 }
 .card-album img {
-   margin-bottom: 10px;
-   width: 250px;
+  margin-bottom: 10px;
+  width: 250px;
 }
 .card-album span {
-   display: inline-block;
-   color: grey;
-   font-weight: bold;
-   margin-top: 8px;
+  display: inline-block;
+  color: grey;
+  font-weight: bold;
+  margin-top: 8px;
 }
-
-
-
-
 
 /**************** SIDEBAR RULES  ******************/
 
 .sidebar {
-  width: 60px;
+  width: 85px;
   display: flex;
   justify-content: center;
 }
 .position-items {
-  font-size: 35px;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -142,6 +135,7 @@ main {
 .navigation img {
   filter: invert(0);
   margin: 5px 0;
+  width: 25px;
 }
 .navigation img:first-child {
   filter: invert(1);
@@ -153,21 +147,16 @@ main {
 .user img:first-child {
   width: 20px;
 }
+
 #profile {
   background-color: rgb(149, 150, 150);
   border-radius: 50%;
 }
 
-
-
-
-
-
-
 /**************** FOOTER RULES  ******************/
 
 footer {
   border: 1px solid white;
-  flex-basis: 100px;
+  flex-basis: 80px;
   background-color: rgb(56, 56, 56);
 }
