@@ -37,7 +37,7 @@ main {
 }
 .header {
   border: 1px solid white;
-  flex-basis: 100px;
+  flex-basis: 80px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -97,6 +97,6 @@ main {
 
 footer {
   border: 1px solid white;
-  flex-basis: 150px;
+  flex-basis: 100px;
   background-color: rgb(56,56,56);
 }
