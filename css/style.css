@@ -29,7 +29,7 @@ main {
 /* Header rules  */
 
 .selection-player {
-   overflow-y: auto;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -52,7 +52,7 @@ header .button {
 }
 
 .player {
-   flex-grow: 1;
+  flex-grow: 1;
 }
 /**************** SIDEBAR RULES  ******************/
 
@@ -70,12 +70,23 @@ header .button {
   flex-direction: column;
   align-items: center;
 }
-.user i,
-.navigation i {
+.user img,
+.navigation img {
+  filter: invert(0);
   margin: 5px 0;
+}
+.navigation img:first-child {
+  filter: invert(1);
 }
 .user {
   justify-content: flex-end;
+}
+.user img:first-child {
+   width: 20px;
+}
+#profile {
+   background-color: rgb(149,150,150);
+   border-radius: 50%;
 }
 
 /**************** FOOTER RULES  ******************/
