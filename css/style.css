@@ -114,7 +114,7 @@ main {
   font-weight: 900;
 }
 
-/* Card  */
+/************** CARD RULES  ************/
 
 .card {
   padding: 10px 0;
@@ -388,3 +388,6 @@ footer {
     display: block;
   }
 }
+
+
+@media screen
