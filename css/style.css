@@ -193,7 +193,7 @@ footer {
 .split {
   float: left;
   width: 33.3%;
-  border: 1px solid white;
+  
   height: 100%;
 }
 .song {
@@ -270,4 +270,15 @@ footer {
   background-color: white;
   border-radius: 2px;
   z-index: 1;
+}
+
+.controls-player {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.controls-player .time {
+  flex-grow: 0;
+  width: 45%;
 }
