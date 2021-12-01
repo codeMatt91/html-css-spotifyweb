@@ -36,6 +36,12 @@ span {
   font-weight: 400;
   margin-top: 20px;
 }
+
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
 /**************** MAIN RULES  *******************/
 
 main {
@@ -183,4 +189,27 @@ footer {
   flex-shrink: 0;
   flex-basis: 80px;
   background-color: rgb(56, 56, 56);
+}
+
+.split {
+  float: left;
+  width: 33.3%;
+  border: 1px solid white;
+  height: 100%;
+}
+.song {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.song img {
+  width: 20%;
+}
+.soundtrack {
+  margin-left: 10px;
+  font-size: 13px;
+}
+.soundtrack span {
+  margin-top: 0;
+  font-size: 11px;
 }
