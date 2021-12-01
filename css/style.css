@@ -309,12 +309,11 @@ footer {
 }
 .hour {
   display: flex;
+  justify-content: center;
   flex-basis: 20%;
   flex-shrink: 0;
 }
-.hour:last-of-type {
-  justify-content: flex-end;
-}
+
 .time {
   display: flex;
   align-items: center;
@@ -328,6 +327,7 @@ footer {
   width: 100%;
   border-radius: 2px;
 }
+
 #time-line-control {
   height: 5px;
   width: 30%;
@@ -349,6 +349,10 @@ footer {
 
 .control.player {
   width: 60%;
+}
+
+footer i {
+  cursor: pointer;
 }
 
 /******************* MEDIA QUERY  ********************/
