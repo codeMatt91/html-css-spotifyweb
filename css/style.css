@@ -396,6 +396,10 @@ footer {
     width: 200px;
     height: 200px;
   }
+.card-album h3,span {
+  font-size: 15px;
+}
+
 }
 
 
@@ -407,5 +411,12 @@ footer {
   .card-album img{
     width: 150px;
     height: 150px;
+  }
+
+  .song {
+    width: 25%;
+  }
+  .music-player {
+    width: 41%;
   }
 }
