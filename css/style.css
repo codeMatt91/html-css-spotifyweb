@@ -166,9 +166,23 @@ nav {
   margin: 5px 0;
   width: 25px;
 }
-.navigation img:first-child {
-  filter: invert(1);
+.user .btn-sidebar:last-child h5{
+  color: white;
 }
+.user h5,
+.navigation h5 {
+  color: grey;
+  display: none;
+}
+.logo-spotify {
+  width: 100%;
+  display: none;
+}
+
+.logo-spotify img {
+  width: 120px;
+}
+
 .user {
   justify-content: flex-end;
   padding-bottom: 10px;
@@ -182,6 +196,8 @@ nav {
   border-radius: 50%;
 }
 
+
+
 /**************** FOOTER RULES  ******************/
 
 footer {
@@ -193,7 +209,7 @@ footer {
 .split {
   float: left;
   width: 33.3%;
-  
+
   height: 100%;
 }
 .song {
@@ -281,4 +297,38 @@ footer {
 .controls-player .time {
   flex-grow: 0;
   width: 45%;
+}
+
+/******************* MEDIA QUERY  ********************/
+
+@media screen and (min-width: 700px) {
+  .sidebar {
+    padding: 0 10px;
+    flex-basis: 180px;
+    justify-content: flex-start;
+    display: flex;
+  }
+  nav {
+    flex-basis: 100%;
+  }
+  .btn-sidebar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .btn-sidebar-logo {
+    display: none;
+  }
+  .logo-spotify {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .navigation h5,
+  .user h5 {
+    display: flex;
+    padding-left: 3px;
+  }
 }
