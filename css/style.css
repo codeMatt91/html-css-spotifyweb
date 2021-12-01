@@ -39,7 +39,7 @@ span {
 
 .clearfix::after {
   display: table;
-  content: '';
+  content: "";
   clear: both;
 }
 /**************** MAIN RULES  *******************/
@@ -113,7 +113,6 @@ main {
   cursor: pointer;
   font-weight: 900;
 }
-
 
 /* Card  */
 
@@ -207,9 +206,68 @@ footer {
 }
 .soundtrack {
   margin-left: 10px;
-  font-size: 13px;
+  font-size: 14px;
 }
 .soundtrack span {
   margin-top: 0;
   font-size: 11px;
+}
+.favourits {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  color: grey;
+}
+.favourits i:first-child {
+  margin-bottom: 5px;
+}
+
+.music-player {
+  display: flex;
+  flex-direction: column;
+}
+.position-e {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.time-line {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  width: 100%;
+}
+.hour {
+  display: flex;
+  flex-basis: 20%;
+  flex-shrink: 0;
+}
+.hour:last-of-type {
+  justify-content: flex-end;
+}
+.time {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+}
+.time span {
+  margin-top: 0;
+  background-color: rgb(163, 160, 160);
+  height: 5px;
+  width: 100%;
+  border-radius: 2px;
+}
+#time-line-control {
+  height: 5px;
+  width: 30%;
+  background-color: white;
+  border-radius: 2px;
+  z-index: 1;
 }
