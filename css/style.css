@@ -24,9 +24,22 @@ body {
   background-color: black;
 }
 
+span {
+  display: inline-block;
+  color: grey;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.title {
+  padding: 0 10px;
+  font-weight: 400;
+  margin-top: 20px;
+}
 /**************** MAIN RULES  *******************/
 
 main {
+  overflow: auto;
   display: flex;
   flex-grow: 1;
 }
@@ -34,7 +47,7 @@ main {
 /* Header rules  */
 
 .wrapper {
-  overflow: auto;
+  overflow-y: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -95,14 +108,6 @@ main {
   font-weight: 900;
 }
 
-/* Title  */
-
-.title {
-  height: 50px;
-  padding: 0 10px;
-  font-weight: 400;
-  line-height: 50px;
-}
 
 /* Card  */
 
@@ -124,11 +129,9 @@ main {
   margin-bottom: 10px;
   width: 250px;
 }
-.card-album span {
-  display: inline-block;
-  color: grey;
-  font-weight: bold;
-  margin-top: 8px;
+
+.title span {
+  margin-bottom: 20px;
 }
 
 /**************** SIDEBAR RULES  ******************/
