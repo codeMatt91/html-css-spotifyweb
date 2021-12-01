@@ -204,6 +204,48 @@ nav {
   background-color: grey;
 }
 
+.playlist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  color: grey;
+  padding-top: 15px;
+}
+.playlist h5 {
+  color: grey;
+}
+.add-playlist {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+.playlist > h5 {
+  color: white;
+}
+.name-playlist {
+  margin-top: 12px;
+}
+.playlist .name-playlist > h5 {
+  padding-left: 0;
+}
+#plus {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(189, 185, 185);
+}
+#plus span {
+  color: black;
+  font-size: 25px;
+  width: 40px;
+  margin-top: 0;
+  text-align: center;
+  line-height: 40px;
+}
+
+
+
 /**************** FOOTER RULES  ******************/
 
 footer {
