@@ -139,6 +139,7 @@ main {
   margin-bottom: 20px;
 }
 
+
 /**************** SIDEBAR RULES  ******************/
 
 .sidebar {
@@ -353,7 +354,7 @@ footer {
 @media screen and (min-width: 700px) {
   .sidebar {
     padding: 0 10px;
-    flex-basis: 180px;
+    flex-basis: 200px;
     justify-content: flex-start;
     display: flex;
   }
@@ -387,7 +388,24 @@ footer {
   #plus {
     display: block;
   }
+  .card-album {
+    width: 200px;
+    height: 300px;
+  }
+  .card-album img{
+    width: 200px;
+    height: 200px;
+  }
 }
 
 
-@media screen
+@media screen and (min-width:800px) {
+  .card-album {
+    width: 150px;
+    height: 250px;
+  }
+  .card-album img{
+    width: 150px;
+    height: 150px;
+  }
+}
