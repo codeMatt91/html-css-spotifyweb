@@ -196,7 +196,13 @@ nav {
   border-radius: 50%;
 }
 
-
+.riga {
+  display: none;
+  margin: 5px 0;
+  height: 2px;
+  width: 100%;
+  background-color: grey;
+}
 
 /**************** FOOTER RULES  ******************/
 
@@ -330,5 +336,8 @@ footer {
   .user h5 {
     display: flex;
     padding-left: 3px;
+  }
+  .riga {
+    display: block;
   }
 }
