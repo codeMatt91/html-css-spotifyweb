@@ -13,7 +13,7 @@ body {
   content: "";
   display: table;
   clear: both;
-} 
+}
 
 /*************** GENERAL RULES  ***************/
 
@@ -212,6 +212,7 @@ nav {
 .user .btn-sidebar:last-child h5 {
   color: white;
 }
+
 .user h5,
 .navigation h5 {
   color: grey;
@@ -376,31 +377,44 @@ footer {
   border-radius: 2px;
 }
 
-#time-line-control {
+.time-line-control {
+  position: relative;
   height: 5px;
   width: 30%;
   background-color: white;
   border-radius: 2px;
-  z-index: 1;
 }
 
 .option-player {
   padding: 0 15px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 .option-player .time {
   flex-grow: 0;
-  width: 45%;
+  width: 30%;
 }
-
-.control.player {
-  width: 60%;
+.option-player i {
+  padding: 0 10px;
 }
-
 footer i {
   cursor: pointer;
+}
+.time:hover .time-line-control {
+  cursor: pointer;
+  background-color: yellowgreen;
+}
+ .time-line-control:hover .circle{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   transform: translateY(35%);
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  
 }
 
 /******************* MEDIA QUERY  ********************/
