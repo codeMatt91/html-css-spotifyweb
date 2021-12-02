@@ -13,7 +13,7 @@ body {
   content: "";
   display: table;
   clear: both;
-}
+} 
 
 /*************** GENERAL RULES  ***************/
 
@@ -28,7 +28,6 @@ span {
   display: inline-block;
   color: grey;
   font-weight: bold;
-  margin-top: 8px;
 }
 
 .title {
@@ -125,7 +124,7 @@ main {
   position: relative;
 }
 #category li:first-child::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -147,6 +146,9 @@ main {
   text-align: center;
   max-width: 50%;
   padding: 5px 10px;
+}
+.card-album span {
+  margin-top: 8px;
 }
 .card-album img {
   margin-bottom: 10px;
@@ -215,6 +217,11 @@ nav {
   color: grey;
   display: none;
 }
+.user h5,
+.navigation h5:hover {
+  cursor: pointer;
+  color: white;
+}
 .logo-spotify {
   width: 100%;
   display: none;
@@ -245,33 +252,33 @@ nav {
   background-color: grey;
 }
 
+.playlist ul {
+  list-style-type: none;
+}
+.playlist li {
+  font-size: 15px;
+  padding: 10px 0;
+}
+.playlist li:hover {
+  color: white;
+  cursor: pointer;
+}
+.playlist li:hover span {
+  background-color: white;
+}
 .playlist {
-  display: flex;
-  flex-direction: column;
+  display: none;
   width: 100%;
-  display: flex;
   color: grey;
   padding-top: 15px;
 }
 .playlist h5 {
-  color: grey;
-}
-.add-playlist {
-  display: flex;
-  align-items: center;
   margin-top: 10px;
-  width: 100%;
-}
-.playlist > h5 {
   color: white;
 }
-.name-playlist {
-  margin-top: 12px;
-}
-.playlist .name-playlist > h5 {
-  padding-left: 0;
-}
+
 #plus {
+  display: inline-block;
   display: none;
   height: 40px;
   width: 40px;
@@ -422,6 +429,9 @@ footer i {
     display: flex;
     justify-content: flex-start;
   }
+  .playlist {
+    display: block;
+  }
   .navigation h5,
   .user h5 {
     display: flex;
@@ -431,7 +441,7 @@ footer i {
     display: block;
   }
   #plus {
-    display: block;
+    display: inline-block;
   }
 }
 
