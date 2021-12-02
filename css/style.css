@@ -201,6 +201,7 @@ nav {
   align-items: center;
 }
 .navigation {
+  height: 85%;
   padding-top: 10px;
 }
 .user img,
@@ -218,8 +219,12 @@ nav {
   color: grey;
   display: none;
 }
-.user h5,
+
 .navigation h5:hover {
+  cursor: pointer;
+  color: white;
+}
+.user h5:hover {
   cursor: pointer;
   color: white;
 }
@@ -233,6 +238,7 @@ nav {
 }
 
 .user {
+  height: 15%;
   justify-content: flex-end;
   padding-bottom: 10px;
 }
@@ -254,6 +260,7 @@ nav {
 }
 
 .playlist ul {
+  overflow-y: auto;
   list-style-type: none;
 }
 .playlist li {
@@ -268,6 +275,7 @@ nav {
   background-color: white;
 }
 .playlist {
+  overflow-y: auto;
   display: none;
   width: 100%;
   color: grey;
@@ -332,6 +340,9 @@ footer {
 }
 .favourits i:first-child {
   margin-bottom: 5px;
+}
+.favourits i:hover {
+  color: white;
 }
 
 .music-player {
@@ -408,16 +419,15 @@ footer i {
   cursor: pointer;
   background-color: yellowgreen;
 }
- .time-line-control:hover .circle{
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   transform: translateY(35%);
+.time:hover .circle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(35%);
   height: 15px;
   width: 15px;
   background-color: white;
   border-radius: 50%;
-  
 }
 
 /******************* MEDIA QUERY  ********************/
