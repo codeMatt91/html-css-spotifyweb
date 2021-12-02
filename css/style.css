@@ -164,7 +164,7 @@ main {
   position: relative;
   cursor: pointer;
 }
-.fa-play-circle {
+.card .fa-play-circle {
   z-index: 2;
   display: none;
   position: absolute;
@@ -174,7 +174,7 @@ main {
   font-size: 50px;
   color: white;
 }
-.brightness:hover .fa-play-circle {
+.card .brightness:hover .fa-play-circle {
   display: block;
   color: white;
 }
@@ -397,6 +397,9 @@ footer {
 }
 .option-player i {
   padding: 0 10px;
+}
+.fa-play-circle.fa-2x:hover {
+  transform: scale(1.2);
 }
 footer i {
   cursor: pointer;
