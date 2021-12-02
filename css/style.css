@@ -109,15 +109,31 @@ main {
   flex-wrap: wrap;
   align-content: space-around;
 }
-
 #category ul a {
   text-decoration: none;
   color: grey;
-  padding: 10px 20px;
   cursor: pointer;
   font-weight: 900;
+  padding: 5px 20px;
 }
-
+#category a:hover {
+  cursor: pointer;
+  color: white;
+}
+#category li {
+  padding: 5px 0;
+  position: relative;
+}
+#category li:first-child::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 35px;
+  background-color: rgb(166, 212, 166);
+}
 /************** CARD RULES  ************/
 
 .card {
